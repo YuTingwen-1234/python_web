@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>04俞婷文的網頁Title</title>
   <link rel="stylesheet" href="{{url_for('static', filename='/css/index.css')}}" />
 </head>
 
 <body>
-  <header>Header content</header>
-  <main>Main content</main>
-  <aside>Sidebar content</aside>
-  <footer>Footer content</footer>
+  <nav class="navbar">
+    <div class="navbar-brand">職能發展學院</div>
+    <div class="menu-button">menu</div>
+    <ul class="navbar-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">課程規劃</a></li>
+      <li><a href="#">最新消息</a></li>
+      <li><a href="#">交通資訊</a></li>
+      <li><a href="#">聯絡我們</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>歡迎來到我們的網站</h1>
+    <p>這是一個最初的網頁框架，符合響應式網頁設計（RWD）。</p>
+    <p>您可以在這個基礎上添加更多的內容和樣式。</p>
+  </div>
+
+<script src="{{url_for('static', filename='js/index.js')}}"></script>
 </body>
 
 </html>
